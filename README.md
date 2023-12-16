@@ -16,4 +16,4 @@ Make sure you have the following software installed on your computer:
 Open your terminal and run the following command to clone the repository:
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/neyvivu/neyvivu.github.io.git
