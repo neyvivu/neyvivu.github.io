@@ -1,19 +1,39 @@
 # NGUYENSHOP
 
-Welcome to NGUYENSHOP! This repository contains HTML, CSS, and JavaScript code for a simple e-commerce website. Follow the guide below to run the project locally on your computer.
+## Usage Guide
 
-## Getting Started
+To use these code files for an e-commerce website hosted on GitHub Pages at https://neyvivu.github.io:
 
-### Prerequisites
-
-Make sure you have the following software installed on your computer:
-
-- [Git](https://git-scm.com/)
-- A web browser (e.g., Google Chrome, Mozilla Firefox)
-
-### Clone the Repository
-
-Open your terminal and run the following command to clone the repository:
+### 1. Download or clone the repository 
+Download the zip file or clone this repository to your local machine:
 
 ```bash
 git clone https://github.com/neyvivu/neyvivu.github.io.git
+
+### 2. Install dependencies   
+Navigate into the project directory and install the dependencies:
+
+```bash
+cd neyvivu.github.io
+npm install
+
+### 3. Modify the code  
+The code can be edited as needed to customize the content and styling. Some areas to modify:  
+
+- HTML sections in index.html
+- CSS styles in styles.css
+- Images and content in /images and /products folders   
+- Scripts for interactivity in /js scripts   
+
+### 4. View locally  
+To view the website locally, open index.html in your browser or run a local dev server like:
+
+```bash
+npm run dev
+
+This will open the website locally for testing and development. 
+
+### 5. Deploy  
+When ready, push the updated code to GitHub to deploy to https://neyvivu.github.io
+
+The website can now be accessed and shared publicly! Be sure to modify areas like the business info, products, styling, etc. to create your own customized e-commerce site.   
