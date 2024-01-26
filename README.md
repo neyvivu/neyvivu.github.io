@@ -6,15 +6,15 @@ To use these code files for an e-commerce website hosted on GitHub Pages at http
 
 ### 1. Download or clone the repository
 Cloning this repository to your local machine:
-
+```
 git clone https://github.com/neyvivu/neyvivu.github.io.git
-
+````
 ### 2. Install dependencies  
 Navigate into the project directory and install the dependencies:
-
+```
 cd neyvivu.github.io
 npm install
-
+```
 
 ### 3. Modify the code
 The code can be edited as needed to customize the content and styling. Some areas to modify:
@@ -26,9 +26,9 @@ The code can be edited as needed to customize the content and styling. Some area
 
 ### 4. View locally
 To view the website locally, open index.html in your browser or run a local dev server like:
-
+```
 npm run dev
-
+```
 This will open the website locally for testing and development.
 
 ### 5. Deploy
