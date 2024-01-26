@@ -16,6 +16,18 @@ let products = [
     name: "Product 3",
     description: "This is product 3",
     price: 24.99
+  },
+  {
+    id: 4,
+    name: "Sale Product 1",
+    description: "This is sale product 1",
+    price: 29.99
+  },
+  {
+    id: 5,
+    name: "Sale Product 1",
+    description: "This is sale product 2",
+    price: 39.99
   }
 ];
 
@@ -27,7 +39,7 @@ function editProduct(id) {
   product.name = newName;
   product.description = newDescription;
   product.price = newPrice;
-  let productElement = document.querySelector(`#product-${id}`);
+  let productElement = document.querySelector(`#product-${id}, #sale-${id}`);
   productElement.querySelector(".price").textContent = `$${newPrice}`;
   productElement.querySelector(".description").textContent = newDescription;
 }
