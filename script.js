@@ -31,3 +31,21 @@ function editProduct(id) {
   productElement.querySelector(".price").textContent = `$${newPrice}`;
   productElement.querySelector(".description").textContent = newDescription;
 }
+
+// Initialize cart total
+let cartTotal = 0;
+
+// Function to add to cart
+function addToCart(price) {
+  cartTotal += price;
+  document.getElementById('cart-total').textContent = cartTotal.toFixed(2);
+}
+
+// Add event listeners to "Add to Cart" buttons
+let buttons = document.querySelectorAll('.btn');
+buttons.forEach(button => {
+  button.addEventListener('click', function() {
+    let price = parseFloat(this.parentElement.querySelector('.price').textContent.slice(1));
+    addToCart(price);
+  });
+});
