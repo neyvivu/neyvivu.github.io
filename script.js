@@ -20,21 +20,14 @@ let products = [
 ];
 
 function editProduct(id) {
-  // Find the product with the given id
   let product = products.find(product => product.id === id);
-
-  // Prompt the user to enter new values
   let newName = prompt("Enter new name", product.name);
   let newDescription = prompt("Enter new description", product.description);
   let newPrice = prompt("Enter new price", product.price);
-
-  // Update the product's data
   product.name = newName;
   product.description = newDescription;
   product.price = newPrice;
-
-  // Update the product's display on the page
   let productElement = document.querySelector(`#product-${id}`);
-  productElement.querySelector("h3").textContent = newName;
-  productElement.querySelector("p").textContent = `$${newPrice}`;
+  productElement.querySelector(".price").textContent = `$${newPrice}`;
+  productElement.querySelector(".description").textContent = newDescription;
 }
